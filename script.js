@@ -46,6 +46,7 @@ window.onload = function () {
     request.onload = function () {
       if (request.status == 200) {
         container.innerHTML = request.responseText;
+        document.title = $path;
       }
     };
   }
